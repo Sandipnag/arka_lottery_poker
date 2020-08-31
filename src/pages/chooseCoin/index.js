@@ -37,6 +37,7 @@ const ChooseCoin = (props) => {
 
         <View style={styles.point_container}>
           <TouchableOpacity
+            style={{}}
             onPress={() => props.navigation.navigate('Dashboard')}>
             <Image
               source={two}
@@ -116,9 +117,11 @@ const styles = StyleSheet.create({
     marginBottom: (height - 200) * 0.06,
   },
   backgroundImage_container: {
-    width: (width - 200) * 0.65,
-    height: (height - 200) * 0.26,
-    borderRadius: (width - 200) * 0.4,
+    // width: (width - 200) * 0.65,
+    // height: (height - 200) * 0.26,
+    width:width * .3,
+    height: width * .3,
+    borderRadius: (width * .3) /2,
     backgroundColor: '#879584',
     alignItems: 'center',
     marginHorizontal: (width - 200) * 0.03,

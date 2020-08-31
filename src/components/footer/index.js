@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   header_container: {
     flex: 1,
     flexDirection: 'row',
-    paddingHorizontal: (width - 200) * 0.06,
+    paddingHorizontal: 12,
     backgroundColor: '#5a0f09',
     height: (height - 200) * 0.12,
     position: 'absolute',
@@ -88,9 +88,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   backgroundImage_container: {
-    width: (width - 200) * 0.25,
-    height: (height - 200) * 0.095,
-    borderRadius: (width - 200) * 0.3,
+    width: width * .13,
+    height: width * .13,
+    borderRadius: (width * .13) / 2,
     backgroundColor: '#879584',
     alignSelf: 'center',
     alignItems: 'center',

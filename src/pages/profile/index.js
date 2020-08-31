@@ -15,8 +15,9 @@ import {
 import LinearGradient from 'react-native-linear-gradient';
 import Header from '../../components/header';
 import pageBackground from '../../assects/images/profile/bg_profilescreen.png';
+import { ScrollView } from 'react-native-gesture-handler';
 
-const {width, height} = Dimensions.get('screen');
+const { width, height } = Dimensions.get('screen');
 
 const Profile = (props) => {
   return (
@@ -38,103 +39,105 @@ const Profile = (props) => {
           />
         </View>
 
-        <KeyboardAvoidingView>
-          <LinearGradient
-            colors={['#3fe2d7', '#d357f6']}
-            style={styles.input_container}
-            start={{x: 0, y: 0}}
-            end={{x: 1, y: 0}}>
+        <KeyboardAvoidingView enabled={true} keyboardVerticalOffset={100}>
+          <ScrollView>
             <LinearGradient
-              colors={['#fdf14e', '#fddd00']}
-              style={styles.input_inner_container}
-              start={{x: 0, y: 0}}
-              end={{x: 1, y: 0}}>
-              <TextInput
-                style={styles.input}
-                placeholder="NAME"
-                placeholderTextColor="#b8b330"
-              />
+              colors={['#3fe2d7', '#d357f6']}
+              style={styles.input_container}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 0 }}>
+              <LinearGradient
+                colors={['#fdf14e', '#fddd00']}
+                style={styles.input_inner_container}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}>
+                <TextInput
+                  style={styles.input}
+                  placeholder="NAME"
+                  placeholderTextColor="#b8b330"
+                />
+              </LinearGradient>
             </LinearGradient>
-          </LinearGradient>
 
-          <LinearGradient
-            colors={['#3fe2d7', '#d357f6']}
-            style={styles.input_container}
-            start={{x: 0, y: 0}}
-            end={{x: 1, y: 0}}>
             <LinearGradient
-              colors={['#fdf14e', '#fcdf01']}
-              style={styles.input_inner_container}
-              start={{x: 0, y: 0}}
-              end={{x: 1, y: 0}}>
-              <TextInput
-                style={styles.input}
-                placeholder="CITY"
-                placeholderTextColor="#b8b330"
-              />
+              colors={['#3fe2d7', '#d357f6']}
+              style={styles.input_container}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 0 }}>
+              <LinearGradient
+                colors={['#fdf14e', '#fcdf01']}
+                style={styles.input_inner_container}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}>
+                <TextInput
+                  style={styles.input}
+                  placeholder="CITY"
+                  placeholderTextColor="#b8b330"
+                />
+              </LinearGradient>
             </LinearGradient>
-          </LinearGradient>
 
-          <LinearGradient
-            colors={['#3fe2d7', '#d357f6']}
-            style={styles.input_container}
-            start={{x: 0, y: 0}}
-            end={{x: 1, y: 0}}>
             <LinearGradient
-              colors={['#fcf922', '#f8de01']}
-              style={styles.input_inner_container}
-              start={{x: 0, y: 0}}
-              end={{x: 1, y: 0}}>
-              <TextInput
-                style={styles.input}
-                placeholder="EMAIL"
-                placeholderTextColor="#b8b330"
-              />
+              colors={['#3fe2d7', '#d357f6']}
+              style={styles.input_container}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 0 }}>
+              <LinearGradient
+                colors={['#fcf922', '#f8de01']}
+                style={styles.input_inner_container}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}>
+                <TextInput
+                  style={styles.input}
+                  placeholder="EMAIL"
+                  placeholderTextColor="#b8b330"
+                />
+              </LinearGradient>
             </LinearGradient>
-          </LinearGradient>
 
-          <LinearGradient
-            colors={['#3fe2d7', '#d357f6']}
-            style={styles.input_container}
-            start={{x: 0, y: 0}}
-            end={{x: 1, y: 0}}>
             <LinearGradient
-              colors={['#f9f81b', '#f8e001']}
-              style={styles.input_inner_container}
-              start={{x: 0, y: 0}}
-              end={{x: 1, y: 0}}>
-              <TextInput
-                style={styles.input}
-                placeholder="USER ID"
-                placeholderTextColor="#b8b330"
-              />
+              colors={['#3fe2d7', '#d357f6']}
+              style={styles.input_container}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 0 }}>
+              <LinearGradient
+                colors={['#f9f81b', '#f8e001']}
+                style={styles.input_inner_container}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}>
+                <TextInput
+                  style={styles.input}
+                  placeholder="USER ID"
+                  placeholderTextColor="#b8b330"
+                />
+              </LinearGradient>
             </LinearGradient>
-          </LinearGradient>
 
-          <LinearGradient
-            colors={['#3fe2d7', '#d357f6']}
-            style={styles.input_container}
-            start={{x: 0, y: 0}}
-            end={{x: 1, y: 0}}>
             <LinearGradient
-              colors={['#f3f617', '#f5e400']}
-              style={styles.input_inner_container}
-              start={{x: 0, y: 0}}
-              end={{x: 1, y: 0}}>
-              <TextInput
-                style={styles.input}
-                placeholder="PASSWORD"
-                placeholderTextColor="#b8b330"
-              />
+              colors={['#3fe2d7', '#d357f6']}
+              style={styles.input_container}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 0 }}>
+              <LinearGradient
+                colors={['#f3f617', '#f5e400']}
+                style={styles.input_inner_container}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}>
+                <TextInput
+                  style={styles.input}
+                  placeholder="PASSWORD"
+                  placeholderTextColor="#b8b330"
+                />
+              </LinearGradient>
             </LinearGradient>
-          </LinearGradient>
+          </ScrollView>
         </KeyboardAvoidingView>
 
         <LinearGradient
           colors={['#f72b64', '#f13ce2']}
           style={styles.button_container}
-          start={{x: 0, y: 0}}
-          end={{x: 1, y: 0}}>
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 0 }}>
           <TouchableOpacity
             style={{}}
             onPress={() => props.navigation.navigate('Dashboard')}>
